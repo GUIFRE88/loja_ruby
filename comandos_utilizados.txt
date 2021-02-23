@@ -1,0 +1,17 @@
+- Cria o projeto da loja:
+  rails new loja_ruby
+
+- Cria o controller de Produtos
+  rails generate controller Produtos
+
+- Cria a base de dados do SqlLite3
+  rails db:create
+
+- Cria o modelo de Produto na base de dados
+  rails generate model Produto nome:string descricao:text preco:decimal quantidade:integer
+
+- Cria o modelo de Produtos no banco
+  rails db:migrate
+
+- Entra no console do banco de dados
+  rails dbconsole
